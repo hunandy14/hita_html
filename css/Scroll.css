@@ -1,0 +1,35 @@
+/* Scrollのデザイン */
+::-webkit-scrollbar {
+    background: transparent;
+    height: 12px;
+    width: 12px;
+}
+::-webkit-scrollbar-button {
+    /* background: transparent; */
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 134, 139, 0.2);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar:hover {
+    background: rgba(128, 134, 139, 0.102);
+    border-radius: 16px;
+    /* height: 16px; */
+}
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 134, 139, 0.4);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
