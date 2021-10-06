@@ -1,4 +1,5 @@
 # https://bit.ly/3mwvw92
+# https://charlottehong.blogspot.com/2021/04/powershell-bom-utf-8.html
 
 function Out-UTF8File {
     param (
