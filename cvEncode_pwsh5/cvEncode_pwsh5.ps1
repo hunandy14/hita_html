@@ -8,6 +8,7 @@ function cvUTF2JIS {
     New-Item -ItemType File -Path $dstPath -Force | Out-Null
     [System.IO.File]::WriteAllLines($dstPath, $Content, $UTF8NoBomEnc)
 }
+# cvUTF2JIS .\UTF8.md .\out.md
 
 function cvJIS2UTF {
     param (
@@ -18,5 +19,4 @@ function cvJIS2UTF {
     New-Item -ItemType File -Path $dstPath -Force | Out-Null
     Write-Output $Content | Out-File $dstPath -Encoding default
 }
-
-cvJIS2UTF .\JIS.md .\out2.md
+# cvJIS2UTF .\JIS.md .\out2.md
