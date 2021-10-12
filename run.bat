@@ -1,0 +1,1 @@
+pwsh -Command "& {.\cvEncode.ps1 }"
