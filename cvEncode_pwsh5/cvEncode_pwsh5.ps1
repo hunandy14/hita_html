@@ -1,3 +1,14 @@
+[CmdletBinding()]
+Param(
+    [Parameter(Position=0)]
+    [String]$funcName,
+    [Parameter(Position=1)]
+    [String]$srcPath,
+    [Parameter(Position=2)]
+    [String]$dstPath, 
+    [Parameter(ParameterSetName = "Filter")]
+    [System.Object]$Filter
+)
 # ==================================================================================================
 function cvJIS2UTF{
     param (
@@ -71,12 +82,19 @@ function cvUTF2JIS_dir {
 }
 # ==================================================================================================
 function Test {
-    cvJIS2UTF "JIS.md" "out.md"
-    cvUTF2JIS "out.md" "out2.md"
-    cvJIS2UTF_dir "dir1" "d:/dir2/"
-    cvUTF2JIS_dir "d:/dir2/"
-    
-    # cvJIS2UTF "out.md" "out22.md"
+    # cvJIS2UTF "JIS.md" "out.md"
+    # cvUTF2JIS "out.md" "out2.md"
+    # cvJIS2UTF_dir "dir1" "d:/dir2/" -Filter @('*.txt')
+    # cvUTF2JIS_dir "d:/dir2/" -Filter @('*.txt')
+
+    cvUTF2JIS_dir "d:/dir2/" -Filter *.txt
 }
+# Test
 # ==================================================================================================
-Test
+$cmd = $funcName
+if ($srcPath) {$cmd = $cmd + " " + "'${srcPath}'"}
+if ($dstPath) {$cmd = $cmd + " " + "'${dstPath}'"}
+if ($Filter) {$cmd = $cmd + " -Filter " + $Filter}
+
+# $cmd
+Invoke-Expression $cmd
