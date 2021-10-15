@@ -82,12 +82,10 @@ function cvUTF2JIS_dir {
 }
 # ==================================================================================================
 function Test {
-    # cvJIS2UTF "JIS.md" "out.md"
-    # cvUTF2JIS "out.md" "out2.md"
-    # cvJIS2UTF_dir "dir1" "d:/dir2/" -Filter @('*.txt')
-    # cvUTF2JIS_dir "d:/dir2/" -Filter @('*.txt')
-
-    cvUTF2JIS_dir "d:/dir2/" -Filter *.txt
+    cvJIS2UTF "JIS.md" "out.md"
+    cvUTF2JIS "out.md" "out2.md"
+    cvJIS2UTF_dir "dir1" "d:/dir2/" -Filter @('*.txt')
+    cvUTF2JIS_dir "d:/dir2/" -Filter @('*.txt')
 }
 # Test
 # ==================================================================================================
