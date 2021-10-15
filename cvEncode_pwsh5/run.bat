@@ -12,7 +12,7 @@ SET dstFile=OUTPUT.md
 
 
 ::使いの例
-@REM SET parm=%funcName[0]% '%srcFile%' '%dstFile%'
+SET parm=%funcName[0]% '%srcFile%' '%dstFile%'
 @REM SET parm=%funcName[2]% '%srcPath%' -Filter *.md
 @REM SET parm=%funcName[2]% '%srcPath%' '%dstPath%'
 @REM SET parm=%funcName[2]% '%srcPath%' '%dstPath%' -Filter *.md
