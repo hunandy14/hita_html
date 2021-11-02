@@ -1,0 +1,80 @@
+{
+// Theme
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme High Contrast",
+// Encoding
+    "files.encoding": "shiftjis",
+    "git-graph.fileEncoding": "shiftjis",
+    // "files.autoGuessEncoding": true,
+// Git
+    "git.path": "D:/Users/71856726/OneDrive - Hitachi Group/HitachiXPC/Desktop/ap/VSCode/data/git/bin/git.exe",
+    "terminal.integrated.profiles.windows": {
+        "gitBash": {
+            "path": "D:/Users/71856726/OneDrive - Hitachi Group/HitachiXPC/Desktop/ap/VSCode/data/git/bin/bash.exe",
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "gitBash",
+// Font
+    "editor.fontSize": 20,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Sarasa Mono J, Consolas, 'Courier New', monospace",
+    "window.restoreWindows": "none",
+// VsCode
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.suggestSelection": "first",
+
+
+
+// Prettier 格式
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter",
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "editor.formatOnSave": false,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "prettier.printWidth": 120,
+    "prettier.trailingComma": "es5",
+    "prettier.withNodeModules": true,
+    "prettier.tabWidth": 4,
+// Todo-tree
+    "todo-tree.general.tags": ["TODO", "FIXME", "TAG", "BUG"],
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text",
+        "foreground": "black",
+        // "background": "darkorange",
+        "background": "white",
+        "opacity": 50,
+        "gutterIcon": true,
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "iconColour": "yellow",
+            "background": "gold",
+        },
+        "FIXME": {
+            "foreground": "black",
+            "iconColour": "yellow",
+            "background": "firebrick",
+        },
+        "TAG": {
+            "icon": "tag",
+            "iconColour": "yellow",
+            // "background": "gold",
+        },
+        "BUG": {
+            "icon": "bug",
+            "iconColour": "crimson",
+            // "foreground": "crimson",
+            "background": "crimson",
+        }
+    },
+}
