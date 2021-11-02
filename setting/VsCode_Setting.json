@@ -7,10 +7,10 @@
     "git-graph.fileEncoding": "shiftjis",
     // "files.autoGuessEncoding": true,
 // Git
-    "git.path": "D:/Users/71856726/OneDrive - Hitachi Group/HitachiXPC/Desktop/ap/VSCode/data/git/bin/git.exe",
+    "git.path": "D:/VSCode/data/git/bin/git.exe",
     "terminal.integrated.profiles.windows": {
         "gitBash": {
-            "path": "D:/Users/71856726/OneDrive - Hitachi Group/HitachiXPC/Desktop/ap/VSCode/data/git/bin/bash.exe",
+            "path": "D:/VSCode/data/git/bin/bash.exe",
             "icon": "terminal-bash"
         }
     },
