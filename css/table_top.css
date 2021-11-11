@@ -1,0 +1,15 @@
+/* 固定表頭包含框線 */
+#Id_Doc_Table th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.5;
+}
+#Id_Doc_Table th::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 1px solid #c0c0c0;
+}
