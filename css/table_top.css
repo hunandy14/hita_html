@@ -9,7 +9,7 @@
     position: absolute;
     left: -1px;
     top: -1px;
-    width: calc(100% - 0px);
-    height: calc(100% - 0px);
-    border: 1px solid #c0c0c0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 2px solid #c0c0c0;
 }
