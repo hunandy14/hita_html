@@ -8,8 +8,8 @@
     content: '';
     position: absolute;
     left: -1px;
-    top: -1px;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    border: 2px solid #c0c0c0;
+    top: -0.5px;
+    width: calc(100% - 1.25px);
+    height: calc(100% - 1px);
+    border: 1.5px solid #c0c0c0;
 }
