@@ -2,7 +2,7 @@
 function decryptor {
     Param(
     [Parameter(Mandatory=$true)]
-    [SecureString]$PasswordEncryptedAsHex
+    [String]$PasswordEncryptedAsHex
     )
 
     Add-Type -AssemblyName System.Security
@@ -21,7 +21,7 @@ function decryptor {
 function encryptor {
     Param(
         [Parameter(Mandatory=$true)]
-        [SecureString]$Password
+        [String]$Password
     )
 
     Add-Type -AssemblyName System.Security
