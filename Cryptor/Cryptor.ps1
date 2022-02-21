@@ -1,3 +1,4 @@
+# https://github.com/RedAndBlueEraser/rdp-file-password-encryptor
 function decryptor {
     Param(
     [Parameter(Mandatory=$true)]
