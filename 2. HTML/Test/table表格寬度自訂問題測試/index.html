@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測試特殊表格長度</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    table td,
+    table th {
+        border: 1px solid black;
+    }
+    .Head {
+        background: pink;
+    }
+    .SSS td {
+        width: calc(700px / 20);
+        border: 0;
+    }
+</style>
+
+<body>
+    <table>
+        <tbody>
+            <tr class="Head">
+                <th colspan="2">社員</th>
+                <th colspan="8">氏名</th>
+                <th colspan="4">職位</th>
+                <th colspan="6">原価</th>
+            </tr>
+            <tr>
+                <td colspan="2">Data1</td>
+                <td colspan="8">Data2</td>
+                <td colspan="4">Data3</td>
+                <td colspan="6">Data4</td>
+            </tr>
+
+            <tr class="Head">
+                <th colspan="7">所属</th>
+                <th colspan="13">職種</th>
+            </tr>
+
+            <tr class="Head">
+                <th colspan="2">コード</th>
+                <th colspan="5">略称</th>
+                <th colspan="2">コード</th>
+                <th colspan="11">名称</th>
+            </tr>
+            <tr>
+                <td colspan="2">Data1</td>
+                <td colspan="5">Data2</td>
+                <td colspan="2">Data3</td>
+                <td colspan="11">Data4</td>
+            </tr>
+
+
+
+            <tr class="Head">
+                <th colspan="3">拠点コード</th>
+                <th colspan="5">拠点名</th>
+                <th colspan="6">勤務区分</th>
+                <th colspan="6">就業時間</th>
+            </tr>
+            <tr>
+                <td colspan="3">Data1</td>
+                <td colspan="5">Data2</td>
+                <td colspan="6">Data3</td>
+                <td colspan="6">Data4</td>
+            </tr>
+
+        </tbody>
+        <tbody class="SSS">
+            <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>            
+        </tbody>
+    </table>
+</body>
+
+</html>
