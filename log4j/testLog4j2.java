@@ -1,35 +1,34 @@
-import org.w3c.dom.Document;
-import java.io.File;
-import org.apache.logging.log4j.*;
-import org.apache.logging.log4j.core.LoggerContext;
+package tester;
 
-class testLog4j2 {
-	static String propertiesPath = "cframeworklog2.properties";
+import org.junit.jupiter.api.Test;
+import jp.co.hitachi_densa.EXPZ09.*;
+
+public class testEXVZ09 {
+	static {
+		System.setProperty("appl.props.path", "./");
+	}
+
+	@Test
+	public void Test1() {
+		EXVZ0904 log = EXVZ0904.getLogger("testEXVZ09", "DM");
+		String msg = "0331 testEXVZ0904";
+		log.info(msg);
+		log.warning(msg);
+		log.severe(msg);
+		EXVZ0904.getRootLogger("testEXVZ904").info(msg);
+	}
 	
-	public static void main(String[] args) {
-		LoggerContext context = (org.apache.logging.log4j.core.LoggerContext) LogManager.getContext(false);
-		context.setConfigLocation((new File(propertiesPath)).toURI());
-		
-		Logger log, log_SYSTEM, log_EA, log_EX;
-		log = LogManager.getRootLogger();
-//		log = LogManager.getLogger(testLog4j2.class.getName());
-		// log.debug("This is debug message");
-		log.info("testLog4j2::This is info message");
-		// log.error("This is error message");
-		
-		log_SYSTEM = LogManager.getLogger("Logger_SYSTEM");
-		// log_SYSTEM.debug("This is debug message");
-		log_SYSTEM.info("SYSTEM::This is info message");
-		// log_SYSTEM.error("This is error message");
-		
-//		log_EA = LogManager.getLogger("EA");
-		// log_EA.debug("This is debug message");
-//		log_EA.info("EA::This is info message");
-		// log_EA.error("This is error message");
-
-//		log_EX = LogManager.getLogger("EX");
-		// log_EX.debug("This is debug message");
-//		log_EX.info("EX::This is info message");
-		// log_EX.error("This is error message");
+	@Test
+	public void Test2() {
+		String msg = "EXVZ0901 ログは正しく出るかどうか";
+		EXVZ0901 log = EXVZ0901.getLogger("EXVZ09.testEXVZ09.Test2()", "DM");
+		log.info(msg);
+		log.warning(msg);
+		log.severe(msg);
+	}
+	@Test
+	public void Test3() {
+		String msg = "EXVZ0900 ログは正しく出るかどうか";
+		EXVZ0900.info("EXVZ09.testEXVZ09.Test3()", msg);
 	}
 }
