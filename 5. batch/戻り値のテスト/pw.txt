@@ -1,0 +1,1 @@
+(start-Process cmd -ArgumentList:"/c C:\Users\hunan\Desktop\bat return\EXPZ10.bat" -Wait -PassThru).ExitCode
