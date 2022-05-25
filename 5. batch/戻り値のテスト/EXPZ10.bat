@@ -5,12 +5,16 @@ echo ここは子バッチの中です。
 
 @REM call EXPZ10\0.bat
 call EXPZ10\1.bat
-echo %errorlevel%
+@REM echo %errorlevel%
 
 
 rem 処理を終了する
 @REM exit
 
-if %errorlevel%==0 (echo "処理成功") else (echo "処理失敗")
+if %errorlevel%==0 (
+    echo "[%errorlevel%]::処理成功"
+) else (
+    echo "[%errorlevel%]::処理失敗"
+)
 
-exit /b %errorlevel%
+exit /b
