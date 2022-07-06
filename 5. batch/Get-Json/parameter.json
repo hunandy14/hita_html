@@ -1,0 +1,17 @@
+{
+    "Default":{
+        "Path": ""
+    },
+    "CreateGroup":{
+        "BoxUserID": "7974017859",
+        "InputFile": "input_csv/CreateGroup.csv",
+        "LogFile": "CreateGroup.log",
+        "Debug": false
+    },
+    "Get-Json":{
+        "BoxUserID": "7974017859",
+        "InputFile": "input_csv/CreateGroup.csv",
+        "LogFile": "CreateGroup.log",
+        "Debug": false
+    }
+}
